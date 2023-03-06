@@ -16485,6 +16485,12 @@ var Main = /*#__PURE__*/_createClass(function Main() {
     overscrollDamping: 1,
     proxyElem: ".MomentumParallax-scroller"
   });
+  document.querySelector(".btn").addEventListener("click", function () {
+    scrollbar.scrollobj.scrollIntoView(document.querySelector("#trigger-div"), {
+      alignToTop: true,
+      onlyScrollIfNeeded: false
+    });
+  });
   var tl = momentum_parallax__WEBPACK_IMPORTED_MODULE_1__.gsap.timeline({
     scrollTrigger: {
       trigger: "#trigger-div",

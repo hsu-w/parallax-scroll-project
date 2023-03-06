@@ -15,6 +15,15 @@ class Main {
         proxyElem: ".MomentumParallax-scroller",
       }
     );
+    document.querySelector(".btn").addEventListener("click", function () {
+      scrollbar.scrollobj.scrollIntoView(
+        document.querySelector("#trigger-div"),
+        {
+          alignToTop: true,
+          onlyScrollIfNeeded: false,
+        }
+      );
+    });
 
     let tl = gsap.timeline({
       scrollTrigger: {

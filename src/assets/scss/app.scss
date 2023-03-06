@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+// Vendors
+@use "../../../node_modules/normalize.css/normalize.css";
+// @use "../../../node_modules/html5-reset/assets/css/reset.css";
+
+// Base
+@use "base/default";
+@use "base/general";
+
+// Components
+// @use "";
+
+// Layouts
+@use "layouts/header";
+
+// Pages
+@use "pages/index";

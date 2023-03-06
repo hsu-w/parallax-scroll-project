@@ -1,0 +1,13 @@
+@use "sass:map";
+@use "variables" as *;
+
+// Media Queries
+@mixin mq($breakpoint: medium, $rule: max, $addition: false) {
+  $breakpoint: map.get($mq-breakpoints, $breakpoint);
+  @if $rule == min and $addition {
+    $breakpoint: $breakpoint + 1;
+  }
+  @media (#{$rule}-width: $breakpoint) {
+    @content;
+  }
+}

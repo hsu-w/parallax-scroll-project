@@ -1,0 +1,14 @@
+@use "../abstracts" as *;
+
+.l-header {
+  padding: 16px 0;
+  background-color: #fff;
+
+  .document-title {
+    font-size: 4rem;
+
+    @include mq() {
+      font-size: 3.4rem;
+    }
+  }
+}

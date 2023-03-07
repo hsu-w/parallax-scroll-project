@@ -16486,10 +16486,7 @@ var Main = /*#__PURE__*/_createClass(function Main() {
     proxyElem: ".MomentumParallax-scroller"
   });
   document.querySelector(".btn").addEventListener("click", function () {
-    scrollbar.scrollobj.scrollIntoView(document.querySelector("#trigger-div"), {
-      alignToTop: true,
-      onlyScrollIfNeeded: false
-    });
+    scrollbar.scrollobj.scrollTo(0, window.innerHeight, 300);
   });
   var tl = momentum_parallax__WEBPACK_IMPORTED_MODULE_1__.gsap.timeline({
     scrollTrigger: {
